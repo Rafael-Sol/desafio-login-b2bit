@@ -1,4 +1,4 @@
-![logo](https://t3020915.p.clickup-attachments.com/t3020915/c241aaa6-6c1c-461f-ba89-a523cc1634f8/form-avatar.png)
+![logo](https://i.imgur.com/hsTuEdg.png)
 # Boas-vindas ao meu projeto do Processo Seletivo B2Bit!
 
 Olá! Eu sou o **Rafael Sol**. (...). Hoje me permitam apresentar meu modesto projeto.
