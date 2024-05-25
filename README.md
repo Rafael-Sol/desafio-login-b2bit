@@ -43,6 +43,7 @@ Para iniciar o app e testar. Ele deve abrir o navegador e rodar automaticamente 
 Me encontro à disposição para tirar quaisquer eventuais dúvidas ou se o caso for, vir a conhecer vocês pessoalmente já que não é muito longe de onde eu moro. Adoraria poder conhecer vocês qualquer dia desses!
 
 📧**Email:** (Removido🤖)
+
 📞**Telefone/WhatsApp:** (Removido🤖)
 
 Agradeço a atenção e a oportunidade!
