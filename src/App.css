@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito');
+
+body{
+  --b2bit-blue-main: #02274f;
+  --b2bit-blue-hover: #116296;
+  --b2bit-blue-active: #001022;
+  --b2bit-blue-press: #001b35;
+  --bg-profile: #f1f5f9;
+  --bg-navtop: white;
+  --bg-contentbox: #fafafa;
+  --text-content: #262626;
+  --text-button: white;
+  --shadow-login: rgba(0, 0, 0, 0.25);
+  --shadow-profile: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --bg-profile: #0a0d11;
+    --bg-navtop: black;
+    --bg-contentbox: black;
+    --text-content: white;
+    --shadow-login: rgba(255, 255, 255, 0.2);
+    --shadow-profile: rgba(255, 255, 255, 0.1);
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 15vmin;
+  max-width: 80%;
+  object-fit: scale-down;
+  pointer-events: none;
+}
+
+.App-header {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-contentbox);
+  min-height: 400px;
+}
+
+.Login-Box, .Profile-Box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 400px;
+  max-height: 480px;
+  background-color: var(--bg-contentbox);
+  border: 0;
+}
+
+.Login-Box {
+  height: 75%;
+  border-radius: 18px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 64px var(--shadow-login);
+}
+
+.Profile-Box {
+  height: 60%;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translate(-50%, calc(-50% - 70px));
+}
+
+.Login-Label, .Profile-Text, .Profile-Avatar-Text {
+  width: calc(80% - 8px);
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.Login-Label {
+  text-align: left;
+  font-weight: 700;
+  color: var(--text-content);
+}
+
+.Login-Error {
+  display: none;
+  color: red;
+}
+
+.Login-Button, .Logout-Button, .Login-Texts, .Profile-Info {
+  border: 0;
+  border-radius: 9px;
+}
+
+.Login-Texts, .Profile-Info {
+  padding: 18px;
+  height: 16px;
+  font-size: 1rem;
+  width: calc(80% - 36px);
+  background-color: #f1f1f1;
+}
+
+.Login-Button, .Logout-Button {
+  width: 80%;
+  height: 54px;
+  color: var(--text-button);
+  font-weight: 700;
+  background-color: var(--b2bit-blue-main);
+  transition: background-color 0.2s ease-out;
+}
+
+.Login-Button:hover, .Logout-Button:hover,
+.Login-Button:focus, .Logout-Button:focus {
+  background-color:var(--b2bit-blue-hover);
+}
+
+.Login-Button:active, .Logout-Button:active {
+  background-color: var(--b2bit-blue-active);
+}
+
+.Login-Button:active:hover, .Logout-Button:active:hover {
+  background-color: var(--b2bit-blue-press);
+}
+
+.Profile-Page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-profile);
+}
+
+.Navigation-Top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--bg-navtop);
+}
+
+.Main-Body{
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: calc(100% - 70px);
+}
+
+.Logout-Button {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  width: 272px;
+  height: 44px;
+  transform: translateY(-50%);
+  border-radius: 6.33px;
+  font-size: 1rem;
+}
+
+.Profile-Picture {
+  width: 64px;
+  min-height: 64px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.Profile-Text, .Profile-Avatar-Text {
+  color: var(--text-content);
+  line-height: 2rem;
+}
+
+.Profile-Text {
+  text-align: left;
+}
+
+.Profile-Text strong {
+  font-weight: 700;
+}
+
+.Profile-Avatar-Text {
+  text-align: center;
+}
+
+.Notification {
+  width: 400px;
+  left: calc(50% - 200px);
+}
+
+/* Medium screens */
+@media (max-width: 768px),(max-height: 560px) {
+
+  .App-logo {
+    min-height: 64px;
+  }
+
+  .Login-Box, .Profile-Box {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    top: calc(50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px var(--shadow-login);
+  }
+
+  .Logout-Button {
+    width: 40%;
+    max-width: 272px;
+    right: 20px;
+  }
+
+  .Profile-Text, .Login-Label, .Profile-Avatar-Text {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+
+  .App-logo {
+    min-height: 64px;
+  }
+
+  .Notification {
+    left: 0;
+    width: 100%;
+  }
+
+  .Login-Box, .Profile-Box {
+    width: 95%;
+    height: auto;
+    padding: 15px;
+    box-shadow: 0 0 15px var(--shadow-profile);
+  }
+
+  .Profile-Box {
+    transform: translate(-50%, -50%);
+  }
+
+  .Logout-Button {
+    width: 95%;
+    max-width: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Profile-Text, .Login-Label, .Profile-Avatar-Text {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
